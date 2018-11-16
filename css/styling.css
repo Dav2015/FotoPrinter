@@ -1,0 +1,114 @@
+
+
+
+.sideBySide{
+    width:100%;
+    display: flex;
+}
+
+#buttons{
+    max-width: 25%;
+}
+
+#buttons button{
+    width:100%;
+    margin:10px;
+}
+
+#buttons input{
+    width:100%;
+    margin:5px;
+}
+
+#buttons h1{
+    padding-left:10px;
+    font-family: 'Lobster', cursive;
+}
+
+#spacer{
+    height: 30px;
+}
+
+#info h1{
+    font-family: 'Lobster', cursive;
+}
+
+.canvas{
+    max-width: 75%;
+    margin-left: 20px;
+}
+
+.canvas h1{
+    font-family: 'Lobster', cursive;
+}
+
+canvas {
+    position: relative;
+    cursor:crosshair;
+}
+
+canvas #drawingCanvas{
+    position: absolute;
+    top:80px;
+
+
+}
+
+
+.buttons_1{
+    display: flex;
+    width:100%;
+    padding-left:10px;
+}
+
+.buttons_1 #otherButton{
+    width:75%;
+    margin:0;
+}
+
+.buttons_1 #myBckColor{
+    width: 25%;
+    margin:0;
+}
+
+.buttons_1 #myButton{
+    width:75%;
+    margin:0;
+}
+
+.buttons_1 #myColor{
+    width: 25%;
+    margin:0;
+}
+
+.buttons_1 #myElColor{
+    width: 70%;
+    margin:0;
+}
+
+.buttons_1 p{
+    width:30%;
+    margin:0;
+    font-family: 'Lobster', cursive;
+}
+
+.drawCanvas{
+    height: auto;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    background-color: blanchedalmond;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    font-size: 0.5rem;
+    text-align:center;
+    position: fixed;
+    height: 10px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}

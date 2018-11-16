@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Family Photos</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styling.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <script src="js/FotoPrint_manager.js"></script>
+    <script src="js/FotoPrint.js"></script>
+    <script src="js/DrawingObjects.js"></script>
+
+</head>
+<body>
+<section class="sideBySide">
+    <section id="buttons">
+            <h1>Definições:</h1>
+
+            <div class="buttons_1">
+                <button id="myButton" onclick="insertText()"> Inserir texto</button>
+                <input type="color" id="myColor">
+            </div>
+            <p> </p>
+            <div class="buttons_1">
+                <button id="otherButton" onclick="backgroundColor()">Mudar cor de fundo</button>
+                <input type="color" id="myBckColor">
+            </div>
+            <p> </p>
+            <div class="buttons_1">
+                <p id="cor">Cor das figuras:</p>
+                <input type="color" id="myElColor">
+            </div>
+            <button class="myButton" onclick="saveasimage();"> Save Image </button>
+            <input onchange="reader()" type="file" id="file">
+            <br>
+            <button class="myButton" onclick="remove();"> Delete </button>
+    </section>
+    <section class="canvas">
+        <h1><b>Escolha um dos itens:</b></h1>
+        <canvas id="objectCanvas" width="900" height="230">
+            Your browser doesn't recognize the canvas element
+        </canvas>
+    </section>
+</section>
+<section class="drawCanvas">
+    <canvas id="drawingCanvas" width="1500" height="400">
+        Your browser doesn't recognize the canvas element
+    </canvas>
+</section>
+
+<section id="info">
+    <h1><b>Informações:</b></h1>
+    <p>Coloque o rato em cima de cada uma das figuras para fazer resize. Experimente!</p>
+</section>
+
+
+
+<section>
+    <script> window.onload = main(); </script>
+</section>
+
+<footer>
+    <div class="footer">Copyright 2017 ISEL PCM.</div>
+</footer>
+</body>
+</html>
